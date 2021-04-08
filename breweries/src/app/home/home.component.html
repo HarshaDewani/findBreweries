@@ -1,0 +1,9 @@
+<app-card *ngFor="let brewery of breweries">
+    <app-title>{{brewery.name}}</app-title>
+    <app-description>Description</app-description>
+    <app-button [url]="brewery.website_url">Website</app-button>
+    <app-button
+        [url]="getGoogleMapsUrl(brewery)">
+        Direction
+    </app-button>
+</app-card>
